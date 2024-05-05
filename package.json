@@ -23,7 +23,6 @@
     "react-particles": "^2.12.2",
     "react-router-dom": "^6.23.0",
     "react-simple-typewriter": "^5.0.1",
-    "react-tsparticles": "^2.12.2",
     "tsparticles": "^3.3.0"
   },
   "devDependencies": {
