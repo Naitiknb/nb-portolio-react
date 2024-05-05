@@ -1,0 +1,83 @@
+.txt {
+    font-size: 100px;
+}
+
+
+#ban {
+    font-size: 70px;
+    /* background: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% ); */
+    /*     
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
+
+    /* background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+font-weight: 900;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+#web {
+    font-size: 70px;
+    font-weight: 900;
+
+}
+
+/* .hire-btn{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.hire-me {
+    border: 3px solid white;
+    /* Set initial border as transparent */
+    border-radius: 30px;
+    color: white;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 900;
+}
+
+.hire-me:hover {
+    border-color: white;
+    /* Change border color on hover */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    transform: scale(1.05);
+    /* Scaling up slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.avatar {
+    position: relative;
+    bottom: 60px;
+
+}
+
+#text {
+    color: transparent;
+    background-image: linear-gradient(0deg, #08AEEA, #2AF598);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+
+
+@media (max-width: 768px) {
+    #ban,#web{
+        font-size: 45px;
+    }
+
+
+
+    
+}

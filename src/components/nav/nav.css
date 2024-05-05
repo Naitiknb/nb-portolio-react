@@ -1,0 +1,45 @@
+/* General styles */
+.logo {
+    color: #05031a;
+}
+
+/* GitHub icon style */
+.github {
+    height: 30px;
+}
+
+/* Navigation text styles */
+#p {
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 10px; /* Add some horizontal margin between the links */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust font size of navigation links */
+    #p {
+        font-size: 16px;
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjust logo size */
+    .logo {
+        width: 50px; /* Reduce logo size */
+        height: 50px; /* Ensure proportional height */
+    }
+
+    /* Adjust GitHub icon size */
+    .github {
+        height: 25px; /* Adjust icon height */
+    }
+}
+
+
+#nav:hover{
+    color: aquamarine!important;
+}
+
+.decor{
+    text-decoration: none;
+}
