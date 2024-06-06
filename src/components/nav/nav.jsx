@@ -39,7 +39,7 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{ border: 'none', outline: 'none', boxShadow: 'none' }}
+          style={{ border: 'none', outline: 'none', boxShadow: 'none',fontSize:"30px" }}
           onClick={handleToggle}
         >
           <i className={`bi ${isToggled ? 'bi-x' : 'bi-list'} text-light`} ></i>
