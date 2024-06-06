@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Project from './projects/project.jsx';
  import Footer from "../src/components/footer/footer.jsx";
 import './App.css'
-import Contact from "../src/About/about.jsx"
+
 
 function App() {
   const [count, setCount] = useState(0)
