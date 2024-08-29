@@ -75,9 +75,8 @@ font-weight: 900;
 @media (max-width: 768px) {
     #ban,#web{
         font-size: 45px;
+    }    
+    #avatar-h{
+        height: 350px;
     }
-
-
-
-    
 }

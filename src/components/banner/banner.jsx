@@ -28,7 +28,7 @@ const Banner = () => {
           </div>
         </div>
         <div className='col-md-2'></div>
-        <div className='col-md-4'>
+        <div className='col-md-4' id='avatar-h'>
           <ComputersCanvas />
         </div>
       </div>

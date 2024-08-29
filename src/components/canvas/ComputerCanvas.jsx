@@ -42,20 +42,22 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 776px)");
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsMobile(mediaQuery.matches);
-
+    console.log("isMobile:", mediaQuery.matches); // Debugging line
+  
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
+      console.log("isMobile updated:", event.matches); // Debugging line
     };
-
+  
     mediaQuery.addEventListener("change", handleMediaQueryChange);
-
+  
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-
+  
   return (
     <Canvas
       frameloop='demand'
@@ -66,6 +68,7 @@ const ComputersCanvas = () => {
         fov: 30,
       }}
       gl={{ preserveDrawingBuffer: true }}
+      
     >
       <Suspense fallback={null}>
         <OrbitControls
