@@ -12,6 +12,8 @@
     color: white !important;
   }
   
+
+
   /* Navigation text styles */
   #p {
     font-weight: 900;
@@ -58,10 +60,20 @@
     .github {
       height: 25px; /* Adjust icon height */
     }
+
+    #nav:hover{
+      border-bottom:2px solid #80D0C7 ;
+       float: inline-end;
+    }
   }
   
   #nav:hover {
     color: aquamarine !important;
+    border-bottom:2px solid #80D0C7 ;
+  }
+
+  #nav{
+    color: #80D0C7;
   }
   
   .decor {
