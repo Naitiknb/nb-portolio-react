@@ -1,0 +1,73 @@
+.exp {
+    font-size: 50px;
+
+}
+
+
+
+#span {
+    color: #770df0 ! important;
+}
+
+p {
+    font-weight: 300;
+}
+
+
+
+.tech-card {
+    background: linear-gradient(145deg, #1f1f2e, #2a2a3d);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    height: 100%;
+}
+
+.tech-card img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tech-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    background: linear-gradient(145deg, #2a2a3d, #3a3a55);
+}
+
+.tech-card h6 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.col-custom {
+    width: 20%;
+    /* 5 cards in a row */
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    .col-custom {
+        width: 25%;
+        /* 4 cards */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-custom {
+        width: 50%;
+        /* 2 cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .col-custom {
+        width: 100%;
+        /* 1 card */
+    }
+}

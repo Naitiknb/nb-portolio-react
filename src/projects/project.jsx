@@ -2,8 +2,6 @@ import React from 'react'
 import Nav from "../components/nav/nav.jsx"
 import Matm from "../../src/assets/m-atm.png"
 import Mos from "../../src/assets/mos.png" 
-import Equidha from "../../src/assets/equidha.png"
-import Weather from "../../src/assets/weather-1.png"
 import Footer from "../../src/components/footer/footer.jsx"
 import Rentkaro from "../assets/Rent-karo.png"
 

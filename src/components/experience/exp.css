@@ -1,14 +1,89 @@
-.exp{
-    font-size: 50px;
- 
+.timeline {
+    position: relative;
+    color: white;
 }
 
-
-
-#span{
-    color: #770df0  ! important; 
+/* CENTER LINE */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    bottom: 0;
+    width: 2px;
+    background: white;
+    transform: translateX(-50%);
 }
 
-p{
-    font-weight: 300;
+/* ROW */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px 0;
+    position: relative;
+}
+
+/* LEFT DATE */
+.timeline-left-date {
+    width: 45%;
+    text-align: right;
+    padding-right: 40px;
+    color: #ccc;
+    font-size: 15px;
+}
+
+/* RIGHT SIDE */
+.timeline-right-content {
+    width: 45%;
+    padding-left: 40px;
+}
+
+/* DOT */
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: #770df0;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* CARD STYLE */
+.exp-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+    border-color: #770df0;
+    box-shadow: 0 10px 30px rgba(119, 13, 240, 0.2);
+}
+
+/* COMPANY HEADER */
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.company-header img {
+    height: 35px;
+}
+
+/* ALTERNATE */
+.timeline-item.right {
+    flex-direction: row-reverse;
+}
+
+.timeline-item.right .timeline-left-date {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 0;
 }

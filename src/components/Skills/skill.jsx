@@ -1,73 +1,67 @@
-import React from 'react'
+import "../Skills/skill.css";
+import Html from "../../assets/technologies/html.png";
+import Css from "../../assets/technologies/css.png";
+import Js from "../../assets/technologies/javascript.png";
+import React from "../../assets/technologies/react.png";
+import Bootstrap from "../../assets/technologies/bootstrap.png";
+import Tailwind from "../../assets/technologies/tailwind.png";
+import Node from "../../assets/technologies/node.png";
+import Express from "../../assets/technologies/express.png";
+import Firebase from "../../assets/technologies/firebase.png";
+import Sql from "../../assets/technologies/sql.png";
+import Git from "../../assets/technologies/git.png";
+import Php from "../../assets/technologies/php.png";
+import Next from "../../assets/technologies/nextjs.png";
+import Ts from "../../assets/technologies/typescript.png";
+import Figma from "../../assets/technologies/figma.png";
+import "../../assets/styles/global.css";
 
-import "../experience/exp.css"
+const technologies = [
+  { name: "HTML", image: Html },
+  { name: "CSS", image: Css },
+  { name: "JavaScript", image: Js },
+  { name: "TypeScript", image: Ts },
+  { name: "React JS", image: React },
+  { name: "Next.js", image: Next },
+  { name: "Node JS", image: Node },
+  { name: "Express JS", image: Express },
+  { name: "MongoDB", image: Sql }, // replace if you have Mongo image
+  { name: "Firebase", image: Firebase },
+  { name: "Git", image: Git },
+  { name: "GitHub", image: Git }, // ideally use separate GitHub icon
+  { name: "Tailwind CSS", image: Tailwind },
+  { name: "Bootstrap", image: Bootstrap },
+  { name: "PHP", image: Php },
+  { name: "Figma", image: Figma },
+];
 
-const skill = () => {
+
+export default function Skills() {
   return (
-<>
+    <div className="container py-5">
 
+      {/* Heading */}
+      <div className="mb-5 text-start">
+        <h1 className="fw-bold display-4">
+          Technologies & Tools<span style={{ color: "#770df0" }}>.</span>
+        </h1>
 
+        <p className="text-secondary fs-5">
+          Building responsive, scalable web applications and modern websites using cutting-edge technologies and tools.
+        </p>
+      </div>
 
-<div className='container'>
-    
-    <h1>Skills<span className='h1' style={{color:"#770df0" ,fontSize:"70px"}}>.</span> </h1>
-    <hr></hr>
-       <div className='row'>
-        <div className='col-md-3'>
-<h1 className='h2'>Web design </h1>
-
-
-<p>UI/UX Design</p>
-<p>Responsive Design</p>
-<p>User Research</p>
-<p>Seo</p>
-
-
-
-        </div>
-
-
-
-        <div className='col-md-3'>
-
-<h1 className='h2'>  Frontend</h1>
-<p>Javascript</p>
-<p>Bootstrap-5</p>
-<p>React js</p>
-<p>Tailwind css</p>
-
-        </div>
-
-
-
-
-<div className='col-md-3'>
-<h1 className='h2'>Backend</h1>
-<p>Node js</p>
-<p>Sql</p>
-<p>Express js</p>
-<p>Firebase</p>
-
-</div>
-
-
-<div className='col-md-3'>
-<h1 className='h2'>Soft Skills</h1>
-<p>Effective communication</p>
-<p>Collaboration</p>
-<p>Commitment</p>
-<p>Leadership</p>
-
-</div>
-
-
+      {/* Cards */}
+      <div className="row g-4">
+        {technologies.map((tech, index) => (
+          <div className="col-custom" key={index}>
+            <div className="tech-card hover-glass">
+              <img src={tech.image} alt={tech.name} />
+              <h6>{tech.name}</h6>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-</div>
-
-
-
-</>
-  )
+  );
 }
-
-export default skill
