@@ -1,8 +1,8 @@
 import React from "react";
 import "../experience/exp.css";
-import Ace360 from "../../assets/ace360.svg";
-import NuWebWavetechnologies from "../../assets/images/nuwebwave.png";
-import Vkart from "../../assets/images/vkart.png";
+import Ace360 from "@/assets/images/companyImages/ace360.svg";
+import NuWebWavetechnologies from "@/assets/images/companyImages/nuwebwave.png";
+import Vkart from "@/assets/images/companyImages/vkart.png";
 
 const experienceData = [
   {

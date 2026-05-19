@@ -6,12 +6,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Project from './projects/project.jsx';
 import Footer from "../src/components/footer/footer.jsx";
+import CursorProvider from "./components/cursorProvider/CrusorProvider.tsx";
 import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
+    <CursorProvider>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path='*' element={<Home />} />
       </Routes>
     </BrowserRouter>
+    </CursorProvider>
   );
 }
 

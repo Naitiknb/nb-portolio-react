@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Logo from "../../assets/logo-1.png";
-import Github from "../../assets/github-1.svg";
+import Logo from "@/assets/images/logo/logo-1.png";
+import Github from "@/assets/technologies/github.svg";
 import "../nav/nav.css";
 import { Link } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -39,7 +39,7 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{ border: 'none', outline: 'none', boxShadow: 'none',fontSize:"30px" }}
+          style={{ border: 'none', outline: 'none', boxShadow: 'none', fontSize: "30px" }}
           onClick={handleToggle}
         >
           <i className={`bi ${isToggled ? 'bi-x' : 'bi-list'} text-light`} ></i>
