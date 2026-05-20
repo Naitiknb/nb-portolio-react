@@ -97,7 +97,7 @@ const projectData = [
   },
 ];
 
-const Project = () => {
+const Project = ({ limit, showLayout = true }) => {
   const [selectedTech, setSelectedTech] = useState("All");
 
   // Unique Technologies
@@ -106,7 +106,7 @@ const Project = () => {
     ...new Set(projectData.flatMap((project) => project.tech)),
   ];
 
-  // Filter Projects
+
   const filteredProjects =
     selectedTech === "All"
       ? projectData
@@ -114,9 +114,14 @@ const Project = () => {
         project.tech.includes(selectedTech)
       );
 
+  // Show limited cards if limit prop exists
+  const displayedProjects = limit
+    ? filteredProjects.slice(0, limit)
+    : filteredProjects;
+
   return (
     <>
-      <Nav />
+      {showLayout && <Nav />}
 
       <div className="container my-5">
         {/* Heading */}
@@ -164,7 +169,7 @@ const Project = () => {
 
         {/* Projects */}
         <div className="row g-4">
-          {filteredProjects.map((project) => (
+          {displayedProjects.map((project) => (
             <div className="col-lg-4 col-md-6" key={project.id}>
               <div className="project-card h-100 shadow-sm rounded-4 overflow-hidden">
                 <img
@@ -243,14 +248,16 @@ const Project = () => {
         </div>
 
         {/* Bottom Text */}
-        <div className="text-center mt-5">
-          <h3 style={{ color: "#770df0" }}>
-            More Projects Coming Soon 🚀
-          </h3>
-        </div>
+        {showLayout && (
+          <div className="text-center mt-5">
+            <h3 style={{ color: "#770df0" }}>
+              More Projects Coming Soon 🚀
+            </h3>
+          </div>
+        )}
       </div>
 
-      <Footer />
+      {showLayout && <Footer />}
     </>
   );
 };
