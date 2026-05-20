@@ -45,19 +45,7 @@ const Banner = () => {
               </Link>
 
 
-              <a
-                href="/Naitik_Bohra_Resume.pdf"
-                download
-                className="text-decoration-none"
-              >
-                <button
-                  type="button"
-                  className="btn download-btn"
-                >
-                  Download CV
-                  <i className="bi bi-download ms-2"></i>
-                </button>
-              </a>
+
             </div>
 
           </div>
