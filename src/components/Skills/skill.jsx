@@ -25,10 +25,9 @@ const technologies = [
   { name: "Next.js", image: Next },
   { name: "Node JS", image: Node },
   { name: "Express JS", image: Express },
-  { name: "MongoDB", image: Sql }, // replace if you have Mongo image
+  { name: "SQL", image: Sql },
   { name: "Firebase", image: Firebase },
   { name: "Git", image: Git },
-  { name: "GitHub", image: Git }, // ideally use separate GitHub icon
   { name: "Tailwind CSS", image: Tailwind },
   { name: "Bootstrap", image: Bootstrap },
   { name: "PHP", image: Php },
