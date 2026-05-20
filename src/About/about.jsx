@@ -90,8 +90,9 @@ const About = () => {
                                 ></textarea>
                             </div>
                             <div className='my-5'>
-                                <button type='submit' className='btn btn-primary w-100'>
-                                    Submit
+                                <button type='submit' className='submit-btn w-100'>
+                                    Send Message
+                                    <i className="bi bi-send ms-2"></i>
                                 </button>
                             </div>
                         </form>
