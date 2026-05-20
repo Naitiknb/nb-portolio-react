@@ -45,7 +45,12 @@ const footer = () => {
 <h3>Intersted in working together <span className='h1' style={{color:"#770df0" ,fontSize:"30px"}}> ?</span></h3>
 
 {/* <button className='btn btn my-4 '>Get In Touch</button> */}
-<Link to="/project"><button className='btn btn-outline-success my-4' >Browse projects ...</button></Link>
+<Link to="/project">
+  <button className='browse-btn'>
+    Browse Projects
+    <i className="bi bi-arrow-up-right ms-2"></i>
+  </button>
+</Link>
 
 
     </div>
